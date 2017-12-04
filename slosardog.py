@@ -4,21 +4,24 @@ import time
 sense = SenseHat ()
 
 p = (204, 0, 204)
-g = (0, 102, 102)
-w = (200, 200, 200)
-y = (204, 204, 0)
-e = (0, 0, 0)
+g = (102, 255, 102)
+w = (255, 255, 255)
+y = (255, 255, 0)
+e = (32, 32, 32)
 r = (255, 0, 0)
+o = (255, 128,0)
+b = (51, 51, 255)
+l = (255, 178, 102)
 
 pet1 = [
-	e, e, e, e, e, e, e, e,
-	p, e, e, e, e, e, e, e,
-	e, p, e, e, p, e, p, e,
-	e, p, g, g, p, y, y, e,
-	e, g, g, g, y, w, y, g,
-	e, g, g, g, g, y, y, e,
-	e, g, e, g, e, g, e, e,
-	e, e, e, e, e, e, e, e
+	g, g, e, e, e, e, g, g,
+	g, e, e, l, l, e, g, g,
+	g, e, l, w, l, w, g, g,
+	g, e, l, l, l, l, g, g,
+	g, b, r, y, y, r, g, g,
+	b, o, b, b, b, g, b, g,
+	o, l, r, r, r, l, g, g,
+	o, o, b, o, g, b, g, g
 	]
 
 red = [
