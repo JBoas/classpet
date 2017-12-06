@@ -53,7 +53,7 @@ eating = [
 		LW, W, B, W, W, B, O, O,
 		LW, LW, B, B, B, B, O, O
 		]
-	]	
+	]
 
 
 entertain = [	
