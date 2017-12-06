@@ -29,7 +29,7 @@ pet1 = [
         O, O, O, LW, LW, LW, LW, O,
         O, LW, LW, W, LW, LW, O, O,
         LW, LW, W, W, LW, W, O, O,
-        LW, LW, LW, W, LW, W, O, O,
+        LW, LW, LW, W, LW, W, O, O
         ]
 
 eating = [
@@ -41,7 +41,7 @@ eating = [
 		LW, O, O, LW, LW, O, O, O,
 		W, O, O, LW, W, O, O, O,
 		LW, W, B, W, W, B, O, O,
-		LW, LW, B, B, B, B, O, O,
+		LW, LW, B, B, B, B, O, O
 		],
 		[		                [
 		LW, LW, LW, W, W, LW, O, O,
@@ -51,7 +51,7 @@ eating = [
 		LW, O, W, O, LW, O, O, O,
 		W, O, LW, O, W, O, O, O,
 		LW, W, B, W, W, B, O, O,
-		LW, LW, B, B, B, B, O, O,
+		LW, LW, B, B, B, B, O, O
 		]
 	]	
 
