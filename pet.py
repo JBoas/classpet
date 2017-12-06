@@ -16,6 +16,10 @@ LW = (255,128,0)
 M = (255,228,181)
 
 
+def animate(sense,slides,timetosleep):
+	for slide in slides:
+		sense.set_pixels(slide)
+		time.sleep(timetosleep)
 
 pet1 = [
         O, O, LW, LW, LW, LW, O, O,
@@ -28,8 +32,29 @@ pet1 = [
         LW, LW, LW, W, LW, W, O, O,
         ]
 
+eating = [
+		[
+		LW, LW, LW, W, W, LW, O, O,
+		LW, LW, W, LW, LW, LW, LW, O,
+		LW, W, LW, W, Y, LW, O, O,
+		LW, O, LW, W, LW, O, O, O,
+		LW, O, O, LW, LW, O, O, O,
+		W, O, O, LW, W, O, O, O,
+		LW, W, B, W, W, B, O, O,
+		LW, LW, B, B, B, B, O, O,
+		],
+		[		                [
+		LW, LW, LW, W, W, LW, O, O,
+		LW, LW, W, LW, LW, LW, LW, O,
+		LW, W, LW, W, Y, LW, O, O,
+		LW, O, LW, W, LW, O, O, O,
+		LW, O, W, O, LW, O, O, O,
+		W, O, LW, O, W, O, O, O,
+		LW, W, B, W, W, B, O, O,
+		LW, LW, B, B, B, B, O, O,
+		]
+	]	
 
-	        
 
 entertain = [	
 		[
@@ -57,10 +82,10 @@ entertain = [
 while True:
 	sense.set_pixels(pet1)
 	x, y, z = sense.get_accelerometer_raw().values()
-	if(x>1 or y>1 or z>1):
+	if(x>1.5 or y>1.5 or z>1.5):
 		for a in range(5):
-			sense.set_pixels(entertain[0])
-			time.sleep(1)
-			sense.set_pixels(entertain[1])
-			time.sleep(1)
+			animate(sense,eating,1)
+			time.sleep(6)
+			animate(sense,entertain,1)
+
 sense.clear
