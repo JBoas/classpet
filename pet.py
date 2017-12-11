@@ -52,9 +52,18 @@ eating = [
 		W, O, LW, P, W, O, O, O,
 		LW, W, B, P, W, B, O, O,
 		LW, LW, B, B, B, B, O, O,
+		],
+		[
+		LW, LW, LW, W, W, LW, O, O,
+		LW, LW, W, LW, LW, LW, LW, O,
+		LW, W, LW, W, Y, LW, O, O,
+		LW, O, LW, W, LW, O, O, O,
+		LW, O, W, W, LW, O, O, O,
+		W, O, O, LW, W, O, O, O,
+		LW, W, B, O, O, B, O, O,
+		LW, LW, B, B, B, B, O, O,
 		]
 	]
-
 entertain = [	
 		[
 		O, O, LW, LW, LW, LW, O, O,
@@ -84,5 +93,5 @@ while True:
 	x, y, z = sense.get_accelerometer_raw().values()
 	if(x>1.5 or y>1.5 or z>1.5):
 		for a in range(5):
-			animate(sense,eating,1)
+			animate(sense,entertain,1)
 sense.clear

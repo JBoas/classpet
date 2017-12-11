@@ -155,9 +155,59 @@ entertain =[
         g, e, l, l, l, l, g, g,
         g, b, r, y, y, r, g, g,
         ],[
-
-
-
+	g, g, g, g, g, g, g, g,
+	g, g, g, g, g, g, g, g, 
+	g, g, e, e, e, e, g, g,
+        g, e, e, l, l, e, g, g,
+        g, e, l, w, l, w, g, g,
+        g, e, l, l, l, l, g, g,
+        g, b, r, y, y, r, g, g,
+	b, o, b, b, b, g, b, g
+        ],[
+	g, g, g, g, g, g, g, g,
+	g, g, e, e, e, e, g, g,
+        g, e, e, l, l, e, g, g,
+        g, e, l, w, l, w, g, g,
+        g, e, l, l, l, l, g, g,
+        g, b, r, y, y, r, g, g,
+        b, o, b, b, b, g, b, g,
+        o, l, r, r, r, l, g, g,
+        ],[
+	g, g, e, e, e, e, g, g,
+        g, e, e, l, l, e, g, g,
+        g, e, l, w, l, w, g, g,
+        g, e, l, l, l, l, g, g,
+        g, b, r, y, y, r, g, g,
+        b, o, b, b, b, g, b, g,
+        o, l, r, r, r, l, g, g,
+        o, o, b, o, g, b, g, g
+	],[
+	g, g, e, e, e, e, g, g,
+        g, g, e, l, l, e, e, g,
+        g, g, w, l, w, l, e, g,
+        g, g, l, l, l, l, e, g,
+        g, g, r, y, y, r, b, g,
+        g, g, g, b, b, b, o, b,
+        g, g, l, r, r, r, l, g,
+        g, g, b, g, o, b, o, g
+	],[
+	g, g, g, e, e, e, e, g,
+	g, g, g, e, l, l, e, e,
+	g, g, g, w, l, w, l, e,
+	g, g, g, l, l, l, l, e,
+	g, g, g, r, y, y, r, b,
+	g, g, g, g, b, b, b, o,
+	g, g, g, l, r, r, r, l,
+	g, g, g, b, g, o, b, o
+	],[
+	g, g, g, e, e, e, e, g,
+        g, g, g, e, l, l, e, e,
+        g, g, g, w, l, w, l, e,
+        g, g, g, l, l, l, l, e,
+        g, g, g, r, y, y, r, b,
+        g, g, g, g, b, b, b, o,
+        g, g, g, l, r, r, r, l,
+        g, g, g, b, g, o, b, o
 
 
 
