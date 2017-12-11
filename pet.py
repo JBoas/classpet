@@ -1,3 +1,4 @@
+
 from sense_hat import SenseHat
 import time
 
@@ -64,26 +65,36 @@ eating = [
 		LW, LW, B, B, B, B, O, O,
 		]
 	]
+
 entertain = [	
 		[
 		O, O, LW, LW, LW, LW, O, O,
 		O, LW, O, LW, Y, LW, Y, O,
-		O, O, O, LW, LW, LW, LW, B,
+		O, O, O, LW, LW, LW, LW, W,
 		LW, O, O, LW, W, W, O, O,
 		LW, O, O, LW, LW, LW, LW, O,
 		O, LW, LW, W, LW, LW, O, O,
 		LW, LW, W, W, LW, W, O, O,
 		LW, LW, LW, W, LW, W, O, O,
 		], 
-		[
+		[             
 		O, O, LW, LW, LW, LW, O, O,
                 O, LW, O, LW, Y, LW, Y, O,
-                O, O, O, LW, LW, LW, LW, B,
-                O, LW, O, LW, W, W, O, O,
-                LW, O, O, LW, LW, LW, LW, O,
+                O, O, O, LW, LW, LW, LW, W,
+                O, LW, O, LW, W, W, P, P,
+                LW, O, O, LW, LW, LW, LW, P,
                 O, LW, LW, W, LW, LW, O, O,
                 LW, LW, W, W, LW, W, O, O,
                 LW, LW, LW, W, LW, W, O, O,
+		],
+		O, O, LW, LW, LW, LW, O, O,
+		O, LW, O, LW, Y, LW, Y, O,
+		O, O, O, LW, LW, LW, LW, W,
+		LW, O, O, LW, W, W, O, O,
+		LW, O, O, LW, LW, LW, LW, O,
+		O, LW, LW, W, LW, LW, O, O,
+		LW, LW, W, W, LW, W, O, O,
+		LW, LW, LW, W, LW, W, O, O,
 		]
 	]
 
