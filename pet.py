@@ -81,12 +81,13 @@ entertain = [
 		O, O, LW, LW, LW, LW, O, O,
                 O, LW, O, LW, Y, LW, Y, O,
                 O, O, O, LW, LW, LW, LW, W,
-                O, LW, O, LW, W, W, P, P,
+                O, LW, O, LW, W, P, P, P,
                 LW, O, O, LW, LW, LW, LW, P,
                 O, LW, LW, W, LW, LW, O, O,
                 LW, LW, W, W, LW, W, O, O,
                 LW, LW, LW, W, LW, W, O, O,
 		],
+		[
 		O, O, LW, LW, LW, LW, O, O,
 		O, LW, O, LW, Y, LW, Y, O,
 		O, O, O, LW, LW, LW, LW, W,
@@ -98,11 +99,18 @@ entertain = [
 		]
 	]
 
-
 while True:
 	sense.set_pixels(pet1)
 	x, y, z = sense.get_accelerometer_raw().values()
-	if(x>1.5 or y>1.5 or z>1.5):
+	pitch, roll, yaw = sense.get_orientation_degrees()
+	'''	if(x>1.5 or y>1.5 or z>1.5):
 		for a in range(5):
 			animate(sense,entertain,1)
+	'''
+	if(roll <= 170 and pitch > 200):
+		for a in range(5):
+			animate(sense,eating,1)
+
+
+
 sense.clear
