@@ -107,10 +107,10 @@ while True:
 		for a in range(5):
 			animate(sense,entertain,1)
 	'''
-	if(roll <= 170 and pitch > 200):
+	print(roll, yaw, pitch)
+	if(roll >= 170 and roll < 200):
 		for a in range(5):
 			animate(sense,eating,1)
-
 
 
 sense.clear
