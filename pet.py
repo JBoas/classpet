@@ -79,13 +79,13 @@ entertain = [
 		], 
 		[             
 		O, O, LW, LW, LW, LW, O, O,
-                O, LW, O, LW, Y, LW, Y, O,
-                O, O, O, LW, LW, LW, LW, W,
-                O, LW, O, LW, W, P, P, P,
-                LW, O, O, LW, LW, LW, LW, P,
-                O, LW, LW, W, LW, LW, O, O,
-                LW, LW, W, W, LW, W, O, O,
-                LW, LW, LW, W, LW, W, O, O,
+		O, LW, O, LW, Y, LW, Y, O,
+		O, O, O, LW, LW, LW, LW, W,
+		O, LW, O, LW, W, P, P, P,
+		LW, O, O, LW, LW, LW, LW, P,
+		O, LW, LW, W, LW, LW, O, O,
+		LW, LW, W, W, LW, W, O, O,
+		LW, LW, LW, W, LW, W, O, O,
 		],
 		[
 		O, O, LW, LW, LW, LW, O, O,
@@ -102,15 +102,17 @@ entertain = [
 while True:
 	sense.set_pixels(pet1)
 	x, y, z = sense.get_accelerometer_raw().values()
-	pitch, roll, yaw = sense.get_orientation_degrees()
-	'''	if(x>1.5 or y>1.5 or z>1.5):
+	
+	orientation = sense.get_orientation()
+	print(orientation)
+	
+	
+	if(x>1.5 or y>1.5 or z>1.5):
 		for a in range(5):
 			animate(sense,entertain,1)
-	'''
-	print(roll, yaw, pitch)
-	if(roll >= 170 and roll < 200):
+			
+	if(orientation['roll'] >= 160 and orientation['roll'] < 195 and orientation['yaw'] > 200 and orientation['yaw'] < 220): 
 		for a in range(5):
 			animate(sense,eating,1)
-
 
 sense.clear
