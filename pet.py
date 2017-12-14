@@ -2,6 +2,9 @@
 from sense_hat import SenseHat
 import time
 
+entertainbar = 100
+foodbar = 100
+
 sense = SenseHat()
 G = (0, 255, 0)
 Y = (255, 255, 0)
@@ -33,6 +36,18 @@ pet1 = [
         LW, LW, LW, W, LW, W, O, O
         ]
 
+dead = [
+        K, O, O, O, O, O, O, K,
+        O, K, O, O, O, O, K, O,
+        O, O, K, O, O, K, O, O,
+        O, O, O, K, K, O, O, O,
+        O, O, O, K, K, O, O, O,
+        O, O, K, O, O, K, O, O,
+        O, K, O, O, O, O, K, O,
+        K, O, O, O, O, O, O, K
+        ]		
+		
+		
 eating = [
 		[
 		LW, LW, LW, W, W, LW, O, O,
@@ -104,15 +119,25 @@ while True:
 	x, y, z = sense.get_accelerometer_raw().values()
 	
 	orientation = sense.get_orientation()
-	print(orientation)
 	
+	time.sleep(0.01)
+	entertainbar = entertainbar - .01
+	foodbar = foodbar - .01
+	
+	print(entertainbar, foodbar)
 	
 	if(x>1.5 or y>1.5 or z>1.5):
+		entertainbar = 100
 		for a in range(5):
 			animate(sense,entertain,1)
 			
 	if(orientation['roll'] >= 160 and orientation['roll'] < 195 and orientation['yaw'] > 200 and orientation['yaw'] < 220): 
+		foodbar = 100
 		for a in range(5):
 			animate(sense,eating,1)
+	
+	if(entertainbar < 0) or (foodbar < 0):
+		sense.show_message("Much wow, Very dead", text_colour=[0,0,255])
 
+	
 sense.clear
