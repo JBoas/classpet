@@ -127,12 +127,12 @@ while True:
 	print(entertainbar, foodbar)
 	
 	if(x>1.5 or y>1.5 or z>1.5):
-		entertainbar = 100
+		entertainbar = entertainbar + 25
 		for a in range(5):
 			animate(sense,entertain,1)
 			
 	if(orientation['roll'] >= 160 and orientation['roll'] < 195 and orientation['yaw'] > 200 and orientation['yaw'] < 220): 
-		foodbar = 100
+		foodbar = foodbar + 50
 		for a in range(5):
 			animate(sense,eating,1)
 	
